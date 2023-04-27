@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="icon">
+          <img src="{% static  'myapp/images/logo.jpg' %}" alt="logo" />
+          <i class="icon-tag">Shop more!</i>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Contact</a></li>
+            <li><a href="/contact">Services</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input
+            type="search"
+            name="search"
+            class="srch"
+            id=""
+            placeholder="Type here"
+          />
+          <button type="submit" class="btn">done</button>
+        </div>
+      </div>
+      <!--body section-->
+      <br />
+
+      <div class="matter">
+        <div id="desc">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur <br />
+            adipisicing elit. Laudantium cum ut voluptas? <br />
+            Facere error id maxime provident <br />
+            molestiae! Quo natus dolores ipsum corporis.
+          </p>
+        </div>
+        <div class="buton">
+          <button type="submit" id="btn">Join Us</button>
+          <button type="submit" id="btn">Subscibe</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>User name</th>
+                <th>Email</th>
+                <th>password</th>
+                <th>confirm password</th>
+            </thead>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <tbody>
+                {% for emp in all_emps %}
+                <td>{{emp.firstname}}</td>
+                <td>{{emp.lastname}}</td>
+                <td>{{emp.username}}</td>
+                <td>{{emp.email}}</td>
+                <td>{{emp.password}}</td>
+                <td>{{emp.confirmpassword}}</td>
+                {% endfor %}
+                <br>
+                <br>
+            </tbody>
+            <br>
+        </table>
+      <!--footer section starts-->
+      <footer>
+        <div class="footer">@all copy rights reserved</div>
+        <div class="icon">
+          <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+          <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+          <a href="#"> <ion-icon name="logo-google"></ion-icon> </a>
+          <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+          <a href="#"> <ion-icon name="logo-skype"></ion-icon> </a>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>

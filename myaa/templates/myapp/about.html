@@ -1,0 +1,70 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="about">
+  <h1 style="color: yellow; text: center">welcome to about page</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+    Adipisci optio et nobis nisi pariatur praesentium est ut, <br />
+    doloremque in labore tempore suscipit voluptatum <br />
+    numquam ex minima veniam voluptate laudantium similique.
+  </p>
+</div>
+<div class="form">
+  <form action="{% url 'contact' %}" method="post">
+    {% csrf_token %}
+    <div class="label-tag">
+        <label for="firstname">first name </label>
+        <input type="text" placeholder="Enter first name" name="firstname" />
+      </div>
+      <div class="label-tag">
+        <label for="">last name </label>
+        <input type="text" placeholder="Enter last name email" name="lastname" />
+      </div>
+    <div class="label-tag">
+      <label for="username">Username </label>
+      <input type="text" placeholder="Enter user name" name="username" />
+    </div>
+    <div class="label-tag">
+      <label for="">email </label>
+      <input type="email" placeholder="Enter user email" name="email" />
+    </div>
+    <div class="label-tag">
+      <label for="password">password </label>
+      <input type="password" placeholder="Enter password" name="password" />
+    </div>
+    <div class="label-tag">
+      <label for="confirm password">confirm password </label>
+      <input type="confirmpassword" placeholder="confirmpassword" name="confirmpassword" />
+    </div>
+    <br />
+    <button type="submit">Submit</button>
+    <button type="submit">
+      <span style="color: blue">click here</span><i>if already registered</i>
+    </button>
+  </form>
+</div>
+
+{% endblock %}

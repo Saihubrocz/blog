@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+    color: blue;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(245, 245, 32);
+    position: relative;
+    top: 0px;
+    margin-top: 50px;
+}
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url( '/static/myapp/images/logo.jpg' );
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav{
+    width: 100%;
+    height: 75px;
+    float: left;
+    background:transparent;
+    background-color: rgb(244, 153, 248);
+    border-radius: 23px;
+
+    border: 4px solid rebeccapurple;
+    margin-top: 10px;
+    position: fixed;
+}
+.icon{
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 23px;
+    width: 200px;
+    height: 50px;
+    transition: 0.3 ease;
+    display: flex;
+    /* position: fixed; */
+}
+
+.icon img{
+    width: 50px;
+    height: 50px;
+    border-radius: 23px;
+    border: 4px solid yellowgreen;
+}
+.icon img:hover{
+    border: 5px solid red;
+}
+
+i{
+    color: rgb(255, 70, 252);
+    padding-bottom: 56px;
+    padding-left: 25px;
+    height: 30px;
+    width: 80px;
+    padding-top: 20px;
+}
+.menu ul{
+    
+    display: flex;
+    list-style: none;
+    margin-top: 25px;
+    float: left;
+    padding-left: 250px;
+    
+}
+.menu ul li{
+    padding-left: 45px;
+
+
+}
+.menu ul li a{
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+.menu ul li a:hover{
+    color: rgb(236, 52, 208);
+}
+.search{
+    display: flex;
+    width: 250px;
+    height: 30px;
+    float: left;
+    margin-top: 26px;
+    margin-left: 30px;
+}
+.srch{
+    background: transparent;
+    border: 2px solid yellowgreen;
+    width: 150px;
+    float: left;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000;
+    transition: 0.2s ease;
+}
+.srch:hover{
+    background-color: rgb(248, 219, 176);
+}
+.btn{
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: aqua;
+    transition: 0.2s ease;
+}
+.btn:hover{
+    background-color: rgb(250, 77, 175);
+}
+.matter{
+    width: 55%;
+    height: 30%;
+    /* float: left; */
+    text-align: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+#desc  p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+.buton{
+    width: 400px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 180px;
+    float: left;
+    /* position: fixed; */
+    /* justify-content: center; */
+    /* text-align: center; */
+
+}
+#btn{
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 23px;
+    /* position: fixed; */
+
+
+    /* padding-left: 10px; */
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    margin-top: 145px;
+    background-color: rgb(136, 248, 248);
+    justify-content: center;
+    position: sticky;
+}
+.footer{
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(99, 56, 2);
+}
+.icon{
+    padding-left: 25px;
+    margin-top: 5px;
+}
+.icon a{
+    padding-left: 5px;
+    size: 20px;
+    color: rgb(243, 8, 8);
+    font-size: 20px;
+}
+.form{
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    /* margin-left: 600px;
+    margin-bottom: 400px; */
+    float: left;
+}
+.label-tag{
+    color: blue;
+    font-size: 20px;
+}
+th,td{
+    color: antiquewhite;
+}
+thead th{
+    margin-left: 40px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+table{
+    margin-left: 40px;
+}
+tbody td{
+    padding-left: 30px;
+    margin-top: 20px;
+}
+tbody{
+    margin-top: 20px;
+}
+thead{
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
